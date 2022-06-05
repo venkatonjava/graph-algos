@@ -44,7 +44,11 @@ public class DepthFirstTraversal {
 		 stack.push(startingNode);
 		 while(stack.size()>0) {
 			 Character node = stack.pop();
-			 stack.addAll(inputMap.get(node));
+			 List<Character> adjacentNodes = inputMap.get(node);
+			 for (Character adjNode : adjacentNodes) {
+				stack.push(adjNode);
+			}
+			 //stack.addAll(inputMap.get(node)); Or Use addAll method to add all the adjacent nodes
 			 System.out.println(node);
 		 }
 	}

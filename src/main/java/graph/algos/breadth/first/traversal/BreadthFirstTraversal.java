@@ -39,19 +39,19 @@ import org.junit.Test;
 
 public class BreadthFirstTraversal {
 
-	Map<Character, List<Character>> inputMap = null;
+	private Map<Character, List<Character>> inputMap = null;
 	public void breadthFirstTraverse(Character startingNode) {
 		 Queue<Character> queue = new ArrayDeque<>();
 		 queue.add(startingNode);
 		 while(queue.size()>0) {
-			 Character node = queue.poll();
+			 final Character node = queue.poll();
 			 queue.addAll(inputMap.get(node));
 			 System.out.println(node);
 		 }
 	}
 
 	@Test
-	public void BreadthFirstTraverseTest() {
+	public void breadthFirstTraverseTest() {
 		breadthFirstTraverse('a');
 	}
 
