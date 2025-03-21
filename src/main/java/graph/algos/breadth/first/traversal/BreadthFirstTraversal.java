@@ -23,8 +23,8 @@ import org.junit.Test;
  <br/>* 		|		|
  <br/>* 		a------->c
 <br/> *
- *Use Stack implementation for Breadth first traversal. From the root node push all the adjacent nodes to the stack 
- *and pop the first node on the stack and push all the adjacent nodes to the stack.
+ *Use Queue implementation for Breadth first traversal. From the root node push all the adjacent nodes to the stack 
+ *and pop the first node on the Queue and push all the adjacent nodes to the stack.
  *When element is Popped, Traversal visits that node and pushes all the adjacent nodes to the stack  
  *From the above example: Source Node a<br/>
  *--> Push sourceNode to stack - Stack [a] <br/> 
